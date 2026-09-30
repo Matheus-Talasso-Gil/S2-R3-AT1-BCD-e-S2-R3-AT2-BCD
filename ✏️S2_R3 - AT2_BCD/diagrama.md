@@ -24,7 +24,7 @@ erDiagram
     PRODUTO {
         INT id_produto PK
         VARCHAR nome_produto
-        DECIMAL(10,2) preco_unitario
+        DECIMAL preco_unitario
     }
 
     ENTREGADOR {
@@ -37,7 +37,7 @@ erDiagram
         INT id_pedido FK
         INT id_produto FK
         INT quantidade
-        DECIMAL(10,2) subtotal
+        DECIMAL subtotal
     }
 
     CLIENTE ||--o{ PEDIDO : faz
